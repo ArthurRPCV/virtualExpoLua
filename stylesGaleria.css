@@ -1,0 +1,91 @@
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .menu li {
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .photo,
+  .video {
+    max-width: 80%;
+    width: 50em;
+    margin: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .photo img,
+  .video embed {
+    max-width: 80%;
+    width: 50em;
+    margin: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background-color: #2b2b2bab;
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 1%;
+    font-size: 34px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .modal-body img {
+    width: auto;
+    margin: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .modal-open {
+    display: flex !important;
+  }
+  
